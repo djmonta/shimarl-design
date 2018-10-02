@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { ProjectListing, Layout } from 'components';
 
-const Index = ({
+const Works = ({
   data: {
     allMarkdownRemark: { edges: projectEdges },
   },
@@ -13,9 +13,9 @@ const Index = ({
   </Layout>
 );
 
-export default Index;
+export default Works;
 
-Index.propTypes = {
+Works.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array.isRequired,

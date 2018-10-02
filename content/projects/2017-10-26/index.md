@@ -1,9 +1,10 @@
 ---
-client: "CubeRound"
-title: "CubeRound - Make Cubes round!"
-cover: "./cubeRound.jpg"
+client: "ATAMA TERRACE"
+title: "ATAMA TERRACE"
+cover: "./Atama-terrace.jpg"
 date: "2017-10-26"
-service: "Website"
+service: "Website design, Photography"
+tag: "pickup"
 ---
 # Description
 

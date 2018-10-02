@@ -30,7 +30,7 @@ const active = css`
 const Nav = styled.nav`
   display: flex;
   flex: 1;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0 ${props => props.theme.spacer.horizontal};
   a:not(:first-child) {
     margin-left: 1rem;
