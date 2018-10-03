@@ -9,6 +9,7 @@ const Index = ({
   },
 }) => (
   <Layout>
+    <ProjectPickup />
     <ProjectListing projectEdges={projectEdges} />
   </Layout>
 );

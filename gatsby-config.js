@@ -8,6 +8,12 @@ module.exports = {
     siteUrl: config.siteUrl + pathPrefix,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `shimarldesign`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-emotion',

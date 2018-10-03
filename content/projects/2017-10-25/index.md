@@ -3,8 +3,8 @@ client: "eclat daikanyama"
 title: "eclat daikanyama"
 cover: "./eclat-2017NewYearsCard_01.jpg"
 date: "2017-10-25"
-service: "Design"
-tag: "pickup"
+service: ["Design"]
+tag: ["pickup"]
 ---
 # Description
 
