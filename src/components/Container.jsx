@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   margin: 0 auto;
   padding: 0 ${props => props.theme.spacer.horizontal};
   max-width: ${props => props.theme.container[props.type]};
+  text-align: center;
   ${props =>
     props.type === 'text' &&
     css`
@@ -22,6 +23,27 @@ const Wrapper = styled.div`
         text-align: center;
       }
     `};
+
+  h2.heading {
+    color: #3E3A39;
+    position: relative;
+    display: inline-block;
+    padding: 0 32rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  h2.heading:before, h2.heading:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 30rem;
+    height: 2px;
+    background-color: #3E3A39;
+  }
+    
+  h2.heading:before {left:0;}
+  h2.heading:after {right: 0;}
 `;
 
 const Container = ({ children, type, className }) => (

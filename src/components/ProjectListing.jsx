@@ -8,14 +8,16 @@ import { overlay } from '../../config/theme';
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin: 0 auto;
-  max-width: 70rem;
+  max-width: 72rem;
   width: 87%;
+  text-align: left;
 `;
 
 const Item = styled.div`
-  padding: 0 5%;
+  // padding: 0 5%;
+  margin: 0 2.5%;
   position: relative;
   &:before {
     content: '';
@@ -27,7 +29,7 @@ const Item = styled.div`
 const Content = styled.div`
   height: 100%;
   left: 0;
-  padding: 0 5%;
+  // padding: 0 5%;
   position: absolute;
   top: 0;
   width: 100%;
@@ -35,12 +37,12 @@ const Content = styled.div`
   a {
     color: #fff;
     height: 100%;
-    left: 5%;
+    left: 0;
     opacity: 0;
-    padding: 2rem;
+    padding: 8%;
     position: absolute;
     top: 0;
-    width: 90%;
+    width: 100%;
     z-index: 10;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
@@ -56,10 +58,10 @@ const Content = styled.div`
 const ImageWrapper = styled.div`
   > div {
     height: 100%;
-    left: 5%;
+    left: 0;
     position: absolute !important;
     top: 0;
-    width: 90%;
+    width: 100%;
 
     > div {
       position: static !important;

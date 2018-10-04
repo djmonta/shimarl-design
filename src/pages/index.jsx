@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { ProjectListing, ProjectPickup, Layout } from 'components';
+import { ProjectListing, ProjectPickup, Layout, Container } from 'components';
 
 const Index = ({
   data: {
@@ -9,8 +9,12 @@ const Index = ({
   },
 }) => (
   <Layout>
-    <ProjectPickup />
-    <ProjectListing projectEdges={projectEdges} />
+    <Container>
+      <h2 className="heading">Pick Up</h2>
+      <ProjectPickup />
+      <h2 className="heading">Works</h2>
+      <ProjectListing projectEdges={projectEdges} />
+    </Container>
   </Layout>
 );
 
