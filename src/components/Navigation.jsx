@@ -35,8 +35,9 @@ const Nav = styled.nav`
   flex: 1;
   justify-content: center;
   padding: 0 ${props => props.theme.spacer.horizontal};
+  font-size: 1.3rem;
   a:not(:first-child) {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
     padding: 0 1rem;

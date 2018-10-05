@@ -18,5 +18,5 @@ module.exports = {
   // Settings for typography.jsx
   headerFontFamily: 'Merriweather',
   bodyFontFamily: 'Roboto',
-  baseFontSize: '16px',
+  baseFontSize: '12px',
 };

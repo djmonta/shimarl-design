@@ -29,14 +29,6 @@ const Wrapper = styled.div`
       
     `};
 
-  @media (max-width: ${props => props.theme.breakpoints.s}) {
-      
-    > img {
-      max-width: 80%;
-      height: auto;
-    }
-  }
-
   > a {
     color: #333333;
     font-size: 1.25rem;
@@ -49,7 +41,8 @@ const Wrapper = styled.div`
     color: #3E3A39;
     position: relative;
     display: inline-block;
-    padding: 0 34%;
+    font-size: 1.2rem;
+    padding: 0 20%;
     margin-top: 2.5rem;
     text-align: center;
   }
@@ -58,13 +51,29 @@ const Wrapper = styled.div`
     position: absolute;
     top: 50%;
     display: inline-block;
-    width: 43%;
+    width: 40%;
     height: 2px;
     background-color: #3E3A39;
   }
     
   h2.heading:before {left:0;}
   h2.heading:after {right: 0;}
+  
+  @media (max-width: ${props => props.theme.breakpoints.s}) {
+      
+    > img {
+      max-width: 80%;
+      height: auto;
+    }
+    h2.heading {
+      padding: 0 30%;
+    }
+    h2.heading:before, h2.heading:after {
+      width: 35%;
+    }
+  }
+
+
 `;
 
 const Container = ({ children, type, className }) => (

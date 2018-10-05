@@ -26,7 +26,7 @@ const theme = {
     l: '1200px',
   },
   container: {
-    base: '100rem',
+    base: '120rem',
     text: '55rem',
   },
   spacer: {

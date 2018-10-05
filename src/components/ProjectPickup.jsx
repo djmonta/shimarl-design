@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   margin: 0 auto;
-  max-width: 72rem;
+  max-width: 87rem;
   width: 87%;
   text-align: left;
 

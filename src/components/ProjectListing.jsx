@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   margin: 0 auto;
-  max-width: 72rem;
+  max-width: 87rem;
   width: 87%;
   text-align: left;
   @media (max-width: ${props => props.theme.breakpoints.s}) {
@@ -79,7 +79,7 @@ const Overlay = styled.div`
   z-index: 10;
 
   div {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     letter-spacing: -0.02rem;
     margin-bottom: 0.2rem;
   }
@@ -87,7 +87,7 @@ const Overlay = styled.div`
   h2 {
     opacity: 1;
     font-family: 'Roboto', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: normal;
     margin-bottom: 0;
   }

@@ -15,7 +15,7 @@ const Wrapper = styled.section`
   position: relative;
   width: 100%;
   color: white;
-  padding: 8rem ${props => props.theme.spacer.horizontal};
+  padding: 4rem ${props => props.theme.spacer.horizontal};
   margin-bottom: 6rem;
 `;
 
@@ -29,7 +29,7 @@ const InformationWrapper = styled.div`
 const InfoBlock = styled.div`
   display: flex;
   flex-direction: column;
-  margin: ${props => props.theme.spacer.vertical} ${props => props.theme.spacer.horizontal} 0
+  margin: 0 ${props => props.theme.spacer.horizontal} 0
     ${props => props.theme.spacer.horizontal};
 `;
 
@@ -51,16 +51,16 @@ const Project = ({ pageContext: { slug }, data: { markdownRemark: postNode } }) 
       <Helmet title={`${project.title} | ${config.siteTitle}`} />
       <SEO postPath={slug} postNode={postNode} postSEO />
       <Wrapper style={{ backgroundColor: overlayColor }}>
-        <h1>{project.title}</h1>
+        {/* <h1>{project.title}</h1> */}
         <InformationWrapper>
           <InfoBlock>
             <Top>Client</Top>
             <Bottom>{project.client}</Bottom>
           </InfoBlock>
-          <InfoBlock>
+          {/* <InfoBlock>
             <Top>Date</Top>
             <Bottom>{project.date}</Bottom>
-          </InfoBlock>
+          </InfoBlock> */}
           <InfoBlock>
             <Top>Service</Top>
             <Bottom>{project.service.join(', ')}</Bottom>
