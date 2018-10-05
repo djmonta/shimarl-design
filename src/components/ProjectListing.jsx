@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 
 const Item = styled.div`
   // padding: 0 5%;
-  margin: 0 2.5%;
+  margin: 2.5%;
   position: relative;
   &:before {
     content: '';
@@ -51,6 +51,13 @@ const Content = styled.div`
       color: #fff;
       opacity: 1;
       text-decoration: none;
+    }
+
+    h2 {
+      font-size: inherit;
+    }
+    div {
+      font-size: 0.9rem;
     }
   }
 `;
@@ -93,7 +100,9 @@ const ProjectListing = ({ projectEdges }) => (
             <Link to={project.node.fields.slug}>
               <Overlay style={{ backgroundColor: overlayColor }} />
               <h2>{project.node.frontmatter.client}</h2>
-              <div>{project.node.frontmatter.service}</div>
+              <div>
+                {project.node.frontmatter.service.join(', ')}
+              </div>
             </Link>
           </Content>
         </Item>

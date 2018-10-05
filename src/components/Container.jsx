@@ -10,6 +10,10 @@ const Wrapper = styled.div`
   ${props =>
     props.type === 'text' &&
     css`
+      > img {
+        height: 100px;
+        margin-bottom: 2.5rem;
+      }
       h2 {
         font-size: 1.25rem;
         text-align: center;
@@ -28,8 +32,8 @@ const Wrapper = styled.div`
     color: #3E3A39;
     position: relative;
     display: inline-block;
-    padding: 0 32rem;
-    margin-top: 1.5rem;
+    padding: 0 34%;
+    margin-top: 2.5rem;
     text-align: center;
   }
   h2.heading:before, h2.heading:after{
@@ -37,7 +41,7 @@ const Wrapper = styled.div`
     position: absolute;
     top: 50%;
     display: inline-block;
-    width: 30rem;
+    width: 43%;
     height: 2px;
     background-color: #3E3A39;
   }

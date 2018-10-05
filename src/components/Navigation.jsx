@@ -15,6 +15,9 @@ const Wrapper = styled.header`
     &:hover {
       color: ${props => props.theme.brand.primary};
     }
+    img {
+      margin-bottom: 0;
+    }
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
     padding: 1rem 0 3rem 0;

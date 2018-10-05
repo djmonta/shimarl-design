@@ -63,7 +63,7 @@ const Project = ({ pageContext: { slug }, data: { markdownRemark: postNode } }) 
           </InfoBlock>
           <InfoBlock>
             <Top>Service</Top>
-            <Bottom>{project.service}</Bottom>
+            <Bottom>{project.service.join(', ')}</Bottom>
           </InfoBlock>
         </InformationWrapper>
       </Wrapper>

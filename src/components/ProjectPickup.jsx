@@ -53,6 +53,13 @@ const Content = styled.div`
       opacity: 1;
       text-decoration: none;
     }
+
+    h2 {
+      font-size: inherit;
+    }
+    div {
+      font-size: 0.9rem;
+    }
   }
 `;
 
@@ -87,6 +94,7 @@ const ProjectPickup = () => (
       query ProjectPickup {
         allMarkdownRemark(
           limit: 3
+          sort: { fields: [frontmatter___date], order: DESC }
           filter: { frontmatter: {tag: { in: ["pickup"] } } }
         ) {
           edges {
@@ -124,7 +132,9 @@ const ProjectPickup = () => (
               <Link to={project.node.fields.slug}>
                 <Overlay style={{ backgroundColor: overlayColor }} />
                 <h2>{project.node.frontmatter.client}</h2>
-                <div>{project.node.frontmatter.service}</div>
+                <div>
+                  {project.node.frontmatter.service.join(', ')}
+                </div>
               </Link>
             </Content>
           </Item>

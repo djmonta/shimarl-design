@@ -14,6 +14,7 @@ const Index = ({
       <ProjectPickup />
       <h2 className="heading">Works</h2>
       <ProjectListing projectEdges={projectEdges} />
+      <p>and more</p>
     </Container>
   </Layout>
 );
@@ -30,7 +31,10 @@ Index.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { tag: { nin: ["pickup"] } } }
+      ) {
       edges {
         node {
           fields {

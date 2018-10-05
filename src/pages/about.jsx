@@ -6,8 +6,8 @@ import config from '../../config/website';
 const About = () => (
   <Layout>
     <Helmet title={`About | ${config.siteTitle}`} />
-    <Header><img src="/logos/logo-g.png" /></Header>
     <Container type="text">
+      <img src="/logos/logo-g.png" />
       <h2>略歴</h2>
       <p>
       2002年から十数年間、空間装飾の会社で働く傍、個人で様々な仕事を請け負い、<br/>

@@ -10,9 +10,6 @@ const Wrapper = styled.div`
   text-align: center;
   h1 {
     margin-bottom: 0;
-    img {
-      height: 100px;
-    }
   }
 `;
 
