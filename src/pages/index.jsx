@@ -14,7 +14,7 @@ const Index = ({
       <ProjectPickup />
       <h2 className="heading">Works</h2>
       <ProjectListing projectEdges={projectEdges} />
-      <p>and more</p>
+      <a href="/works">and more</a>
     </Container>
   </Layout>
 );

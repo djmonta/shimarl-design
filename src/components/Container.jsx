@@ -28,6 +28,14 @@ const Wrapper = styled.div`
       }
     `};
 
+  > a {
+    color: #333333;
+    font-size: 1.25rem;
+    display: block;
+    margin-top: 2rem;
+    text-decoration: none;
+  }
+  
   h2.heading {
     color: #3E3A39;
     position: relative;
