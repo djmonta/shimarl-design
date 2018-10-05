@@ -26,6 +26,13 @@ const Wrapper = styled.div`
         --x-height-multiplier: 0.35;
         text-align: center;
       }
+      
+      @media (max-width: ${props => props.theme.breakpoints.s}) {
+        > img {
+          max-width: 80%;
+          height: auto;
+        }
+      }
     `};
 
   > a {
