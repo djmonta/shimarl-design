@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: */imprint/
 
-sitemap: https://portfolio-emma.netlify.com/sitemap.xml
+sitemap: https://modest-kepler-3f5f54.netlify.com/sitemap.xml
