@@ -62,6 +62,18 @@ const Name = styled.div`
       height: 45px;
     }
   }
+  @media (max-width: ${props => props.theme.breakpoints.s}) {
+        
+    a {
+      margin: 0 auto;
+      text-align:center;
+      img {
+        // margin: 0 auto;
+        max-width: 80%;
+        height: auto;
+      }
+  }
+
   @media (max-width: ${props => props.theme.breakpoints.xs}) {
     order: 1;
     flex: 1 0 100%;

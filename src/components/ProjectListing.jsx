@@ -13,6 +13,9 @@ const Wrapper = styled.div`
   max-width: 72rem;
   width: 87%;
   text-align: left;
+  @media (max-width: ${props => props.theme.breakpoints.s}) {
+    width: 95%;
+  }
 `;
 
 const Item = styled.div`

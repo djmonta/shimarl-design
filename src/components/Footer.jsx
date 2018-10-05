@@ -40,7 +40,7 @@ const Footer = () => (
         <FaInstagram />
       </a>
     </SocialMedia>
-    Copyright &copy; 2018. All right reserved.{' '}
+    Copyright &copy; 2018. All right reserved.<br/>
     <a href="https://www">Shimarl Design</a>.
   </Wrapper>
 );

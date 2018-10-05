@@ -27,13 +27,15 @@ const Wrapper = styled.div`
         text-align: center;
       }
       
-      @media (max-width: ${props => props.theme.breakpoints.s}) {
-        > img {
-          max-width: 80%;
-          height: auto;
-        }
-      }
     `};
+
+  @media (max-width: ${props => props.theme.breakpoints.s}) {
+      
+    > img {
+      max-width: 80%;
+      height: auto;
+    }
+  }
 
   > a {
     color: #333333;
