@@ -8,7 +8,6 @@ const Contact = () => (
     <Helmet title={`Contact | ${config.siteTitle}`} />
     <Header>Contact</Header>
     <Container type="text">
-      <h1>Contact</h1>
       <a href="mailto:shimarldesign@gmail.com">shimarldesign&#064;gmail.com</a>
     </Container>
   </Layout>

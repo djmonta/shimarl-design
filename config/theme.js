@@ -2,11 +2,11 @@ import { darken } from 'polished';
 
 const brand = {
   primary: '#666666',
-  secondary: '#ffffff',
+  secondary: '#252525',
 };
 
 const colors = {
-  grey: '#25252',
+  grey: '#252525',
   black: '#000',
   bg_color: '#f3f3f3',
   body_color: '#222',
