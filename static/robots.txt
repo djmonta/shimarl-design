@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: */imprint/
 
-sitemap: https://modest-kepler-3f5f54.netlify.com/sitemap.xml
+sitemap: https://shimarl-design.netlify.com/sitemap.xml
