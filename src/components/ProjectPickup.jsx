@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 const Item = styled.div`
   // padding: 0 5%;
   position: relative;
-  margin: 0 2.5%;
+  margin: 2.5%;
   &:before {
     content: '';
     display: block;
@@ -39,20 +39,14 @@ const Content = styled.div`
     color: #fff;
     height: 100%;
     left: 0;
-    opacity: 0;
-    padding: 8%;
+    opacity: 1;
+    padding: 0;
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 1;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
-
-    &:hover {
-      color: #fff;
-      opacity: 1;
-      text-decoration: none;
-    }
 
     h2 {
       font-size: inherit;
@@ -79,13 +73,29 @@ const ImageWrapper = styled.div`
 
 const Overlay = styled.div`
   background-color: ${props => props.theme.brand.primary};
-  height: 100%;
+  // height: 100%;
   left: 0;
-  opacity: .5;
+  opacity: .85;
+  padding: 2.5%;
   position: absolute;
-  top: 0;
+  bottom: 0;
+  max-height: 20%;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
+
+  div {
+    font-size: 0.7rem;
+    letter-spacing: -0.02rem;
+    margin-bottom: 0.2rem;
+  }
+
+  h2 {
+    opacity: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
 `;
 
 const ProjectPickup = () => (
@@ -130,11 +140,10 @@ const ProjectPickup = () => (
                 <Img fluid={project.node.frontmatter.cover.childImageSharp.fluid} />
               </ImageWrapper>
               <Link to={project.node.fields.slug}>
-                <Overlay style={{ backgroundColor: overlayColor }} />
-                <h2>{project.node.frontmatter.client}</h2>
-                <div>
-                  {project.node.frontmatter.service.join(', ')}
-                </div>
+                <Overlay style={{ backgroundColor: overlayColor }}>
+                  <div>{project.node.frontmatter.service.join(', ')}</div>
+                  <h2>Client: {project.node.frontmatter.client}</h2>
+                </Overlay>
               </Link>
             </Content>
           </Item>

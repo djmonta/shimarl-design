@@ -8,7 +8,7 @@ import { overlay } from '../../config/theme';
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   margin: 0 auto;
   max-width: 72rem;
   width: 87%;
@@ -38,27 +38,14 @@ const Content = styled.div`
     color: #fff;
     height: 100%;
     left: 0;
-    opacity: 0;
-    padding: 8%;
+    opacity: 1;
+    padding: 0;
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 10;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
-
-    &:hover {
-      color: #fff;
-      opacity: 1;
-      text-decoration: none;
-    }
-
-    h2 {
-      font-size: inherit;
-    }
-    div {
-      font-size: 0.9rem;
-    }
   }
 `;
 
@@ -80,11 +67,27 @@ const Overlay = styled.div`
   background-color: ${props => props.theme.brand.primary};
   height: 100%;
   left: 0;
-  opacity: .5;
+  opacity: 0.85;
+  padding: 3%;
   position: absolute;
-  top: 0;
+  bottom: 0;
+  max-height: 20%;
   width: 100%;
-  z-index: -1;
+  z-index: 10;
+
+  div {
+    font-size: 0.7rem;
+    letter-spacing: -0.02rem;
+    margin-bottom: 0.2rem;
+  }
+
+  h2 {
+    opacity: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
 `;
 
 const ProjectListing = ({ projectEdges }) => (
@@ -98,11 +101,12 @@ const ProjectListing = ({ projectEdges }) => (
               <Img fluid={project.node.frontmatter.cover.childImageSharp.fluid} />
             </ImageWrapper>
             <Link to={project.node.fields.slug}>
-              <Overlay style={{ backgroundColor: overlayColor }} />
-              <h2>{project.node.frontmatter.client}</h2>
+              <Overlay style={{ backgroundColor: overlayColor }}>
               <div>
                 {project.node.frontmatter.service.join(', ')}
               </div>
+              <h2>Client: {project.node.frontmatter.client}</h2>
+              </Overlay>
             </Link>
           </Content>
         </Item>
