@@ -8,8 +8,8 @@ module.exports = {
   siteDescription: '',
   author: 'LekoArts', // Author for schemaORGJSONLD
   // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@emma', // Twitter Username
-  ogSiteName: 'emma', // Facebook Site Name
+  userTwitter: '@shimardesign', // Twitter Username
+  ogSiteName: 'Shimarl Design', // Facebook Site Name
   ogLanguage: 'ja_JP',
   // googleAnalyticsID: 'UA-12345689-1',
   // Manifest and Progress color
