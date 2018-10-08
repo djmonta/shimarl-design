@@ -14,7 +14,7 @@ const colors = {
   link_color_hover: `${darken(0.15, brand.primary)}`,
 };
 
-export const overlay = ['#f76262', '#216583', '#65c0ba', '#35477d', '#6c5b7b', '#203541', '#9951ff', '#480032'];
+export const overlay = ['#252525'];
 
 const theme = {
   brand,

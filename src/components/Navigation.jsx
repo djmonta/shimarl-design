@@ -79,6 +79,12 @@ const Name = styled.div`
     order: 1;
     flex: 1 0 100%;
     margin-bottom: 0.75rem;
+
+    a {
+      img {
+        padding: 2rem 3rem 1rem;
+      }
+    }
   }
 `;
 

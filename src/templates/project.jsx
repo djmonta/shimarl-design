@@ -41,7 +41,21 @@ const Top = styled.div`
 `;
 
 const Bottom = styled.div`
-  font-size: 125%;
+  font-size: 100%;
+  ul {
+    list-style: none;
+    margin: 0;
+    display: inline-flex;
+    flex-direction: column;
+    li:not(:last-child):after {
+      content: ', ';
+    }
+    li {
+      display: inline-block;
+      margin-bottom: initial;
+      // padding: 0;
+    }
+  }
 `;
 
 const Project = ({ pageContext: { slug }, data: { markdownRemark: postNode } }) => {
@@ -63,7 +77,8 @@ const Project = ({ pageContext: { slug }, data: { markdownRemark: postNode } }) 
           </InfoBlock> */}
           <InfoBlock>
             <Top>Service</Top>
-            <Bottom>{project.service.join(', ')}</Bottom>
+            <Bottom><ul>{project.service.map(s => {
+              return <li>{s}</li>;})}</ul></Bottom>
           </InfoBlock>
         </InformationWrapper>
       </Wrapper>
